@@ -147,12 +147,13 @@ table {
 #navContainer {
   width: 100vw;
   min-height: fit-content;
-  height: 160px;
-  background-color: aquamarine;
+  height: 20vh;
+  background-color: #DF333D;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20%;
+  gap: 10%;
+  
 }
 
 #logoContainer {
@@ -166,6 +167,8 @@ table {
 #logoContainer > img {
   width: inherit;
   height: inherit;
+  border-radius: 100%;
+  padding: 15%;
 }
 
 #navBarMenu,
@@ -175,4 +178,67 @@ table {
   justify-content: center;
   align-items: center;
   gap: 25px;
+}
+
+#navBarMenu {
+  color: white;
+  text-transform: capitalize;
+  font-family: Playfair;
+  font-style: normal;
+  font-size: 1.4em;
+}
+
+#navBarIcons {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right: -15em;
+}
+
+#navBarIcons > span {
+  color: white;
+}
+
+.navBarItem:hover {
+  border-top: 1px solid white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.active {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding-bottom: 1rem;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+/* 
+#homeContent {
+  background-image: url("/src/assets/img/home-page-big.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+} */
+
+.homeBackgroundImg {
+  background-image: url("/src/assets/img/home-page-big.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+
+.menuBackgroundImg {
+  background-image: url("/src/assets/img/pastry.jpg");
+  background-position: 100%;
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
+.aboutBackgroundImg {
+  background-image: url("/src/assets/img/weddingcake.jpg");
+  background-position: right;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 80vh;
 }

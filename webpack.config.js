@@ -3,6 +3,8 @@ const path = require('path');
 module.exports = {
   mode: "production",
   entry: './src/index.js',
+  stats: {warnings:false},
+  ignoreWarnings: [/./],
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
